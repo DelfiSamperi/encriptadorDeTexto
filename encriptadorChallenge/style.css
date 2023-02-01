@@ -1,0 +1,135 @@
+/* un comentario en CSS */
+/* ID es unico, CLASS es repetible entre varios elementos */
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #c8d2f7;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.encabezado img{
+    width: 120px;
+    float: left;
+    margin: 10px 20px 20px 10px;
+}
+
+ fieldset, textarea{
+    position: absolute;
+    width: 60%;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #c8d2f7;
+    color: #0A3871;
+} 
+
+/* textarea{
+    background: #c8d2f7;
+} */
+
+/* .ingreso-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 10px;
+    display: none;
+    width: 120px;
+    height: 176px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 800px; 
+   
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+} */
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.botones > legend{
+    font-size: small;
+}
+
+.buttonEnc{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+    color: #D8DFE8;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.buttonDes{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    /* Light gray */
+    background: #D8DFE8;
+    color: #0A3871;
+    /* Dark blue/dark-blue-300 */
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.resultado{
+    position: absolute;
+    width: 40%;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    /* White */
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+footer{
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    left: 150px;
+    top: 1000px;
+}
+
+footer > p{
+    padding-bottom: 20px;
+    text-align: center;
+}

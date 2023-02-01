@@ -1,0 +1,26 @@
+<script>
+//e <- enter //i <- imes //a <- ai //o <- ober //u <- ufat 
+    var vocal = [a,e,i,o,u]
+    
+    var encriptado = [];
+    var input = document.querySelector("input");
+        input.focus();
+    
+    function encriptar() {
+        for(var i = 0; i <= input.length ; i++) {
+            if(input[i] == vocal[0]) {
+                encriptado.push("ai");
+            }
+            else {
+                encriptado.push(input[i]);
+            }
+        }
+        return encriptado;
+    }
+    
+    function desencriptar() {}
+    
+    var button = document.querySelector("button");
+    button.onclick = encriptar;
+    
+    </script>
