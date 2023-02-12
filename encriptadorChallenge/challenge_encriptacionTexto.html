@@ -8,61 +8,38 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
 		<title>Encriptador de Texto</title>
-		<!-- <link rel="stylesheet" href="style.css"> -->
-		
-		<link rel="stylesheet" href="newstyle.css">
-		
+		<link rel="stylesheet" href="style.css">
+		<!-- <link rel="stylesheet" href="newstyle.css"> -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
 	</head>
 
 	<body>
 
-		<header>
+		<div class="main">
 
-			<div class="encabezado">
+			<img src="imagenes/logo.png" alt="Logo del encriptador">
+			<h1>ENCRIPTADOR DE TEXTOS</h1>
 
-				<img src="imagenes/logo.png" alt="Logo del encriptador">
-				<h1>ENCRIPTADOR DE TEXTOS</h1>
-
-			</div>
-
-		</header>
-
-		<main>
-
-			<fieldset>
-
-				<textarea cols="70" rows="10" id="texto" class="ingreso-texto" placeholder="Ingrese texto aquí..."></textarea>
+			<textarea cols="100" rows="20" id="texto" class="ingreso-texto" placeholder="Ingrese texto aquí..."></textarea>
 			
-			</fieldset>
-			
-
 			<div class="botones">
 
 				<legend>Solo puedes ingresar letras minúsculas sin carácteres especiales (como acentos y coso)</legend>
-				<button class="buttonEnc">Encriptar</button>
-				<button class="buttonDes">Desencriptar</button>
+				<button id="boton" class="buttonEnc">Encriptar</button>
+				<button id="boton" class="buttonDes">Desencriptar</button>
 
 			</div>
+
+		</div>
 			
-			<div class="resultado">
+		<div class="resultado">
 
-				<p>Aquí se muestra el texto encriptado</p>
-				<button>Copiar texto</button>
+			<p>Aquí se muestra el texto encriptado</p>
+			<button>Copiar texto</button>
 
-			</div>
-
-		</main>
-
-		<footer>
-
-			<p>Gracias por usar mi encriptador. Espero te haya gustado!  <a href="">Dime en qué puedo mejorar</a></p>
-			<p id="copy">&copy Copyright DelfiSampe - 2023</p>
-
-		</footer>
+		</div>	
 
 	</body>
 
