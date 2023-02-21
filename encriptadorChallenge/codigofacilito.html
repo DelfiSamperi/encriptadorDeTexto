@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset UTF-8>
+<h1>encriptador de textos</h1>
+
+<script>
+//e <- enter //i <- imes //a <- ai //o <- ober //u <- ufat
+function imprimir(frase) {
+    document.write(frase);
+}
+
+var texto = prompt("Ingrese texto a encriptar");
+var encriptar = prompt("¿Deseas encriptarlo o desencriptarlo? responde E o D");
+
+if (encriptar === "E") {
+    var textoEncriptado = [];
+    for (var i = 0; i <= texto.length; i++ ) {
+        if (texto[i] === "a") {
+                textoEncriptado.push("ai");
+            }
+            else if (texto[i] === "e") {
+                textoEncriptado.push("enter");
+            }
+            else if (texto[i] === "i") {
+                textoEncriptado.push("imes");
+            }
+            else if (texto[i] === "o") {
+                textoEncriptado.push("ober");
+            }
+            else if (texto[i] === "u") {
+                textoEncriptado.push("ufat");
+            }
+            else {
+                textoEncriptado.push(texto[i]);
+            }
+        }
+        var textEnc = textoEncriptado.join(""); 
+        imprimir(textEnc);
+    } //Hasta aca funciona. Alabado sea el señor de los codigos
+
+else if(encriptar === "D") { //ahora si!! pero que significa el gi?? g=global/i=mayusc o minusc
+        var textoDesencriptado = texto.replace(/ai/gi,"a").replace(/enter/gi,"e").replace(/imes/gi,"i").replace(/ober/gi,"o").replace(/ufat/gi,"u");
+        imprimir(textoDesencriptado);
+    }
+
+</script>
